@@ -1,10 +1,16 @@
 # NeRF from scratch
 Wanted to play with NeRFs, so that's that.
+Neural Radiance Fields (NeRF): "synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input
+views" [1]
+
+![nerf](imgs/nerf.PNG)
+
+
 Ran it on Google colab T4 GPU. Used gemini to generate the problem and rendering views: an elongated, illuminated and colorful torus.
 
 ![torus](imgs/torus.png)
 
-Used a basic FCN NeRF, positional encoding like described in the original paper.
+Used a basic FCN NeRF, positional encoding like described in the original paper [1].
 
 In every epoch, I go over all (sampled once) given 50 training views. From each view\step, I sample only some of the pixels (for computational efficiency in every step).
 
@@ -18,5 +24,4 @@ Because colab is limited, it only ran for 200 epochs, but it already seems to be
 ![t1](imgs/test_pred_1.png)
 ![t3](imgs/test_pred_3.png)
 
-[Original paper](https://arxiv.org/abs/2003.08934):
-Mildenhall, B., Srinivasan, P. P., Tancik, M., Barron, J. T., Ramamoorthi, R., & Ng, R. (2021). Nerf: Representing scenes as neural radiance fields for view synthesis. Communications of the ACM, 65(1), 99-106.
+[1] Mildenhall, B., Srinivasan, P. P., Tancik, M., Barron, J. T., Ramamoorthi, R., & Ng, R. (2021). Nerf: Representing scenes as neural radiance fields for view synthesis. Communications of the ACM, 65(1), 99-106. [Link](https://arxiv.org/abs/2003.08934).
