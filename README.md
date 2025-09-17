@@ -1,5 +1,6 @@
 # NeRF from scratch
 Wanted to play with NeRFs, so that's that.
+
 Neural Radiance Fields (NeRF): "synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input
 views" [1]
 
