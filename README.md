@@ -10,7 +10,7 @@ Ran it on Google colab T4 GPU. Used gemini to generate the problem and rendering
 
 ![torus](imgs/torus.png)
 
-Used a basic FCN NeRF, positional encoding like described in the original paper [1].
+Used a basic MLP Feedforward NeRF, positional encoding like described in the original paper [1].
 
 In every epoch, I go over all (sampled once) given 50 training views. From each view\step, I sample only some of the pixels (for computational efficiency in every step).
 
